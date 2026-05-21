@@ -1,0 +1,10 @@
+[project]
+name = "python-fixture"
+version = "0.0.0"
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "ruff",
+    "pyright",
+]

@@ -1,0 +1,9 @@
+{
+  "name": "override-malformed-fixture",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "vitest run",
+    "lint": "eslint ."
+  }
+}
