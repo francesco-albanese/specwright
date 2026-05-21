@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "specwright",
+  "project_id": "6013c6c4-070f-4970-8c17-4f8086aae7c8"
+}

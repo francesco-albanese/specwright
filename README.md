@@ -15,4 +15,57 @@ specwright is the opposite:
 - **Agent-agnostic.** Skills are plain markdown, designed against both Claude Code and Codex skill formats. Drop them into any agent that loads skills.
 - **Beads first, not locked in.** Default tracker is beads; plan-markdown files, GitHub Issues, and GitLab Issues are first-class fallbacks.
 
-Skills, install, and workflow docs land as the implementation lands.
+## Status
+
+`v0.1.0` — plugin skeleton only. Manifests + repo layout are in place; skills land in subsequent slices.
+
+## Install
+
+### Claude Code
+
+```text
+/plugin marketplace add francesco-albanese/specwright
+/plugin install specwright@specwright
+```
+
+### Codex
+
+```sh
+codex plugin marketplace add francesco-albanese/specwright
+```
+
+Then open `/plugins` in the Codex TUI and install **specwright**, or:
+
+```text
+/plugin install specwright@specwright
+```
+
+### Portable (any other agent)
+
+```sh
+git clone https://github.com/francesco-albanese/specwright.git
+ln -s "$PWD/specwright/skills" <your-agent-skills-dir>/specwright
+```
+
+The `skills/` directory holds plain `<name>/SKILL.md` files — any agent that loads markdown skills with YAML frontmatter can use them.
+
+## Layout
+
+```text
+.
+├── .claude-plugin/
+│   ├── plugin.json        # Claude Code plugin manifest
+│   └── marketplace.json   # Claude Code marketplace catalog
+├── .codex-plugin/
+│   └── plugin.json        # Codex plugin manifest
+├── marketplace.json       # Codex marketplace catalog
+├── skills/                # SKILL.md files (one per skill, added in later slices)
+├── references/            # Shared reference docs (contracts, validators)
+├── docs/                  # ADRs + discovery notes
+├── CONTEXT.md             # Project glossary
+└── PLAN.md                # v1 plan
+```
+
+## License
+
+MIT — see [LICENSE](./LICENSE).
