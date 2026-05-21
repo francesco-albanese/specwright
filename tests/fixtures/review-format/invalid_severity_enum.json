@@ -1,0 +1,12 @@
+{
+  "findings": [
+    {
+      "severity": "Critical",
+      "file": "src/auth/login.ts",
+      "line": 42,
+      "concern": "secret leak",
+      "why": "API key hardcoded.",
+      "recommended_fix": "Move to env var."
+    }
+  ]
+}

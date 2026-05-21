@@ -1,0 +1,12 @@
+{
+  "findings": [
+    {
+      "severity": "LOW",
+      "file": "docs/usage.md",
+      "line": 7,
+      "concern": "doc inconsistency",
+      "why": "Example shows `a | b` but actual API uses `a, b`.",
+      "recommended_fix": "Update docs to use `a, b` separator."
+    }
+  ]
+}

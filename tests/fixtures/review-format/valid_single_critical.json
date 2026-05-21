@@ -1,0 +1,12 @@
+{
+  "findings": [
+    {
+      "severity": "CRITICAL",
+      "file": "src/auth/login.ts",
+      "line": 42,
+      "concern": "secret leak",
+      "why": "API key hardcoded in source.",
+      "recommended_fix": "Move key to env var ANTHROPIC_API_KEY; rotate the leaked key."
+    }
+  ]
+}

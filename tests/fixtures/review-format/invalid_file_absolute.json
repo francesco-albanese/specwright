@@ -1,0 +1,12 @@
+{
+  "findings": [
+    {
+      "severity": "LOW",
+      "file": "/etc/secrets.txt",
+      "line": 1,
+      "concern": "path",
+      "why": "Absolute path.",
+      "recommended_fix": "Use repo-relative path."
+    }
+  ]
+}

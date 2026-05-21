@@ -1,0 +1,11 @@
+{
+  "findings": [
+    {
+      "severity": "HIGH",
+      "file": "src/api/route.ts",
+      "line": 19,
+      "concern": "missing AC",
+      "why": "No auth check."
+    }
+  ]
+}
