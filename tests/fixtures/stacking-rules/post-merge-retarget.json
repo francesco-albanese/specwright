@@ -1,0 +1,17 @@
+{
+  "description": "Three-slice chain where the middle parent has merged. GitHub auto-retargets the open child PR to main; the grandchild whose direct parent is still open stays on its parent branch.",
+  "slices": [
+    {"id": "specwright-bi2.1", "depends_on": [], "branch": "slice/specwright-bi2.1-plugin-skeleton"},
+    {"id": "specwright-bi2.2", "depends_on": ["specwright-bi2.1"], "branch": "slice/specwright-bi2.2-grill-skill"},
+    {"id": "specwright-bi2.3", "depends_on": ["specwright-bi2.2"], "branch": "slice/specwright-bi2.3-to-prd-skill"}
+  ],
+  "pr_state": {
+    "specwright-bi2.1": "merged",
+    "specwright-bi2.2": "open"
+  },
+  "expected_base": {
+    "specwright-bi2.1": "main",
+    "specwright-bi2.2": "main",
+    "specwright-bi2.3": "slice/specwright-bi2.2-grill-skill"
+  }
+}
