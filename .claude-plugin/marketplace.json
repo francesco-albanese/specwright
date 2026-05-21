@@ -1,0 +1,23 @@
+{
+  "name": "specwright",
+  "description": "Self-hosted marketplace for the specwright plugin — spec-driven development as a few sharp skills, not a framework.",
+  "owner": {
+    "name": "Francesco Albanese",
+    "email": "albanesefrancesco.af@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "specwright",
+      "source": "./",
+      "description": "Spec-driven development as a few sharp skills, not a framework.",
+      "version": "0.1.0",
+      "homepage": "https://github.com/francesco-albanese/specwright",
+      "license": "MIT",
+      "keywords": [
+        "spec-driven-development",
+        "tdd",
+        "vertical-slice"
+      ]
+    }
+  ]
+}

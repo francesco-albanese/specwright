@@ -1,7 +1,48 @@
+# OS
 .DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.npm/
+.pnpm-store/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.env
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+dist/
+build/
+*.egg-info/
+
+# Rust
+target/
+Cargo.lock
+
+# Worktrees (gtr leftovers)
+.worktrees/
+.gtr/
+
+# Discovery notes (private)
 docs/discovery/
 
-# Beads / Dolt files (added by bd init)
+# Beads runtime artifacts that shouldn't ship
 .dolt/
 *.db
 .beads-credential-key

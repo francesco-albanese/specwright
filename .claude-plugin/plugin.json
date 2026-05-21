@@ -1,0 +1,20 @@
+{
+  "name": "specwright",
+  "version": "0.1.0",
+  "description": "Spec-driven development as a few sharp skills, not a framework. Platform-agnostic markdown skills for PRD authoring, vertical-slice cutting, TDD execution in worktrees, and multi-agent review.",
+  "author": {
+    "name": "Francesco Albanese",
+    "email": "albanesefrancesco.af@gmail.com"
+  },
+  "homepage": "https://github.com/francesco-albanese/specwright",
+  "repository": "https://github.com/francesco-albanese/specwright",
+  "license": "MIT",
+  "keywords": [
+    "spec-driven-development",
+    "tdd",
+    "vertical-slice",
+    "skills",
+    "agents",
+    "beads"
+  ]
+}
