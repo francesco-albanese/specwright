@@ -1,0 +1,24 @@
+[
+  {
+    "id": "checkout-3.1",
+    "title": "Render cart summary on checkout page",
+    "acceptance_criteria": "WHEN the user navigates to /checkout THE SYSTEM SHALL render every cart line item with quantity, unit price and line total.",
+    "depends_on": [],
+    "estimated_touched_paths": [
+      "src/checkout/CartSummary.tsx",
+      "src/checkout/__tests__/CartSummary.test.tsx"
+    ],
+    "spec_path": ".specs/checkout-redesign/"
+  },
+  {
+    "id": "checkout-3.2",
+    "title": "Apply discount code on checkout",
+    "acceptance_criteria": "WHEN the user submits a valid discount code on /checkout THE SYSTEM SHALL recompute the order total and reflect the new line in the summary.",
+    "depends_on": ["checkout-3.1"],
+    "estimated_touched_paths": [
+      "src/checkout/DiscountField.tsx",
+      "src/checkout/discount_service.ts"
+    ],
+    "spec_path": ".specs/checkout-redesign/"
+  }
+]

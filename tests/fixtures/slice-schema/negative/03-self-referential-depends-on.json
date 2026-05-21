@@ -1,0 +1,8 @@
+{
+  "id": "bad-3",
+  "title": "Slice depending on itself",
+  "acceptance_criteria": "WHEN x THE SYSTEM SHALL y.",
+  "depends_on": ["bad-3"],
+  "estimated_touched_paths": ["src/x.py"],
+  "spec_path": ".specs/x/"
+}

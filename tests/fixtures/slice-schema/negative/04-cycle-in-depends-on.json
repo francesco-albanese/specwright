@@ -1,0 +1,26 @@
+[
+  {
+    "id": "bad-4a",
+    "title": "Slice A in a cycle",
+    "acceptance_criteria": "WHEN a THE SYSTEM SHALL b.",
+    "depends_on": ["bad-4b"],
+    "estimated_touched_paths": ["src/a.py"],
+    "spec_path": ".specs/x/"
+  },
+  {
+    "id": "bad-4b",
+    "title": "Slice B in a cycle",
+    "acceptance_criteria": "WHEN c THE SYSTEM SHALL d.",
+    "depends_on": ["bad-4c"],
+    "estimated_touched_paths": ["src/b.py"],
+    "spec_path": ".specs/x/"
+  },
+  {
+    "id": "bad-4c",
+    "title": "Slice C closing the cycle",
+    "acceptance_criteria": "WHEN e THE SYSTEM SHALL f.",
+    "depends_on": ["bad-4a"],
+    "estimated_touched_paths": ["src/c.py"],
+    "spec_path": ".specs/x/"
+  }
+]

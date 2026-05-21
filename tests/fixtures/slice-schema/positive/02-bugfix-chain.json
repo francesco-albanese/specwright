@@ -1,0 +1,23 @@
+[
+  {
+    "id": "auth-bug-7.1",
+    "title": "Failing regression test for stale-session redirect",
+    "acceptance_criteria": "WHEN a user lands on /dashboard with an expired session cookie THE SYSTEM SHALL redirect to /login (currently 500s).",
+    "depends_on": [],
+    "estimated_touched_paths": [
+      "tests/integration/test_session_redirect.py"
+    ],
+    "spec_path": ".specs/auth-stale-session/"
+  },
+  {
+    "id": "auth-bug-7.2",
+    "title": "Fix stale-session handler to redirect cleanly",
+    "acceptance_criteria": "WHEN a user lands on /dashboard with an expired session cookie THE SYSTEM SHALL redirect to /login and the previously failing test SHALL pass alongside all existing tests.",
+    "depends_on": ["auth-bug-7.1"],
+    "estimated_touched_paths": [
+      "src/auth/session_middleware.py",
+      "tests/integration/test_session_redirect.py"
+    ],
+    "spec_path": ".specs/auth-stale-session/"
+  }
+]
