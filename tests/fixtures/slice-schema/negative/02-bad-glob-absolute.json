@@ -1,8 +1,0 @@
-{
-  "id": "bad-2",
-  "title": "Slice with absolute and escape path globs",
-  "acceptance_criteria": "WHEN x THE SYSTEM SHALL y.",
-  "depends_on": [],
-  "estimated_touched_paths": ["/etc/passwd", "../escape.txt"],
-  "spec_path": ".specs/x/"
-}

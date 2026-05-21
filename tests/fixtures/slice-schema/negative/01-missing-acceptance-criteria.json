@@ -1,7 +1,0 @@
-{
-  "id": "bad-1",
-  "title": "Slice missing acceptance_criteria",
-  "depends_on": [],
-  "estimated_touched_paths": ["src/x.py"],
-  "spec_path": ".specs/x/"
-}

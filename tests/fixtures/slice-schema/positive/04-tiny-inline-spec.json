@@ -1,9 +1,0 @@
-{
-  "id": "docs-typo-19",
-  "title": "Fix typo in README install snippet",
-  "acceptance_criteria": "WHEN a user copies the install command from README.md THE SYSTEM SHALL paste a syntactically correct command (`npm install` not `npm instal`).",
-  "depends_on": [],
-  "estimated_touched_paths": ["README.md"],
-  "spec_path": null,
-  "inline_spec": "## Intent\nFix README typo blocking new-user onboarding.\n\n## AC\nWHEN a user copies the install command from README.md THE SYSTEM SHALL paste a syntactically correct command.\n\n## Notes\nNo .specs/ dir; this slice is the whole spec."
-}
