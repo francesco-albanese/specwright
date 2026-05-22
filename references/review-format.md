@@ -58,7 +58,7 @@ Tiny flow uses a single combined reviewer subagent covering all four concerns.
 
 Findings render as a markdown table with this exact header:
 
-```
+```markdown
 | Severity | Concern | Location | Why | Fix |
 | --- | --- | --- | --- | --- |
 ```
@@ -89,7 +89,7 @@ If findings is empty the table header is still emitted with no data rows.
 
 Immediately after the table, one blank line, then this prompt verbatim:
 
-```
+```text
 What next?
 [1] auto-fix all CRITICAL
 [2] CRITICAL + HIGH
