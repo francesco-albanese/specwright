@@ -14,5 +14,32 @@
     "agents",
     "beads"
   ],
-  "skills": "./skills/"
+  "skills": "./skills/",
+  "skill_entries": [
+    {
+      "name": "specwright:grill-me",
+      "path": "skills/specwright:grill-me/SKILL.md",
+      "description": "Interview until intent and EARS acceptance criteria are precise enough for specwright artifacts."
+    },
+    {
+      "name": "specwright:grill-with-docs",
+      "path": "skills/specwright:grill-with-docs/SKILL.md",
+      "description": "Interview against repository glossary and ADRs, updating CONTEXT.md as decisions crystallize."
+    },
+    {
+      "name": "specwright:tdd",
+      "path": "skills/specwright:tdd/SKILL.md",
+      "description": "Run an intent-based RED-GREEN-REFACTOR loop for one vertical slice."
+    },
+    {
+      "name": "specwright:to-prd",
+      "path": "skills/specwright:to-prd/SKILL.md",
+      "description": "Write requirements.md, design.md, and bugfix.md artifacts that match spec-format.md."
+    },
+    {
+      "name": "specwright:to-issues",
+      "path": "skills/specwright:to-issues/SKILL.md",
+      "description": "Create beads vertical slices that match slice-schema.md."
+    }
+  ]
 }

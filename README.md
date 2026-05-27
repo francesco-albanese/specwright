@@ -17,7 +17,7 @@ specwright is the opposite:
 
 ## Status
 
-`v0.1.0` — plugin skeleton only. Manifests + repo layout are in place; skills land in subsequent slices.
+`v0.1.0` — plugin skeleton plus the first utility skills. Manifests, reference contracts, and the forked specwright grill/TDD/PRD/slicing skills are in place.
 
 ## Install
 
@@ -59,8 +59,8 @@ The `skills/` directory holds plain `<name>/SKILL.md` files — any agent that l
 ├── .codex-plugin/
 │   └── plugin.json        # Codex plugin manifest
 ├── marketplace.json       # Codex marketplace catalog
-├── skills/                # SKILL.md files (one per skill, added in later slices)
-├── references/            # Shared reference docs (contracts, validators)
+├── skills/                # SKILL.md files (one per skill)
+├── references/            # Shared reference docs (contracts)
 ├── docs/                  # ADRs + discovery notes
 ├── CONTEXT.md             # Project glossary
 └── PLAN.md                # v1 plan
