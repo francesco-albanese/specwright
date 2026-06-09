@@ -1,8 +1,6 @@
 ---
 name: write-tasks
-description: Writes beads tasks splitting into epics, tickets with dependencies between tasks. Use when
-the user asks to write tasks for implementation, or when the spec has been recently reviewed and is ready
-for implementation.
+description: Writes beads tasks splitting into epics, tickets with dependencies between tasks. Use when the user asks to write tasks for implementation, or when the spec has been recently reviewed and is ready for implementation.
 context: fork
 allowed-tools: Agent(Explore), Bash, Read, Grep, Write, Edit, Glob, AskUserQuestion, TodoWrite
 argument-hint: "[beads-id]"
@@ -12,16 +10,7 @@ argument-hint: "[beads-id]"
 
 Break a plan into independently-grabbable issues using vertical slices.
 
-Invocation:
-
-- Claude Code: `/specwright:write-tasks`
-- Codex: `$specwright:write-tasks`
-
-Compatibility: this skill is shared by Claude Code and Codex. Keep the
-frontmatter for Claude Code; Codex uses `name` and `description` and may ignore
-unsupported metadata. When a named tool is unavailable, use the closest native
-capability: read/search files directly, ask the user in chat, or edit files with
-the runtime's normal file-editing tools.
+When a named tool is unavailable, use the closest native capability: read/search files directly, ask the user in chat, or edit files with the runtime's normal file-editing tools.
 
 ## Process
 
