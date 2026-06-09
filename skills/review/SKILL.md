@@ -1,8 +1,6 @@
 ---
 name: review
-description: Run a thorough code review of the beads tasks that have been implemented in a previous phase
-using a new agent with a fresh context window. Use it when the user asks to review the code, or when the
-execute phase has concluded.
+description: Run a thorough code review of the beads tasks that have been implemented in a previous phase using a new agent with a fresh context window. Use it when the user asks to review the code, or when the execute phase has concluded.
 context: fork
 allowed-tools: Agent(Explore), Bash, Read, Grep, Write, Edit, AskUserQuestion, Glob, TodoWrite
 argument-hint: "[beads-id]"
@@ -13,16 +11,7 @@ argument-hint: "[beads-id]"
 Review the code produced in the previous phase against spec fidelity, code quality and test quality,
 security flaws and spec gaps/context drifts.
 
-Invocation:
-
-- Claude Code: `/specwright:review`
-- Codex: `$specwright:review`
-
-Compatibility: this skill is shared by Claude Code and Codex. Keep the
-frontmatter for Claude Code; Codex uses `name` and `description` and may ignore
-unsupported metadata. When a named tool is unavailable, use the closest native
-capability: read/search files directly, ask the user in chat, or edit files with
-the runtime's normal file-editing tools.
+When a named tool is unavailable, use the closest native capability: read/search files directly, ask the user in chat, or edit files with the runtime's normal file-editing tools.
 
 If the relevant spec and context is not already in your context window ask the user to provide a merge
 request link or a beads id.
