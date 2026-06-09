@@ -12,16 +12,7 @@ argument-hint: "[beads-id]"
 
 # Review spec
 
-Invocation:
-
-- Claude Code: `/specwright:review-spec`
-- Codex: `$specwright:review-spec`
-
-Compatibility: this skill is shared by Claude Code and Codex. Keep the
-frontmatter for Claude Code; Codex uses `name` and `description` and may ignore
-unsupported metadata. When a named tool is unavailable, use the closest native
-capability: read/search files directly, ask the user in chat, or edit files with
-the runtime's normal file-editing tools.
+When a named tool is unavailable, use the closest native capability: read/search files directly, ask the user in chat, or edit files with the runtime's normal file-editing tools.
 
 The goal is to review the spec located at
 `/docs/specs/{spec-name}/spec.md`
