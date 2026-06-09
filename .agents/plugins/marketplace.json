@@ -1,0 +1,21 @@
+{
+  "name": "specwright",
+  "interface": {
+    "displayName": "specwright",
+    "shortDescription": "Spec-driven development as a few sharp skills, not a framework."
+  },
+  "plugins": [
+    {
+      "name": "specwright",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
