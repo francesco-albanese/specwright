@@ -1,9 +1,6 @@
 ---
 name: review-spec
-description: Reviews the spec written in the previous phase using a new agent with a fresh context
-window, to identify drift from the requirements, ambiguity, test gaps etc. Use it when the user asks to
-review the spec, or when the spec has been recently written and needs to be reviewed before moving to the
-next phase of writing tasks and implementation.
+description: Reviews the spec written in the previous phase using a new agent with a fresh context window, to identify drift from the requirements, ambiguity, test gaps etc. Use it when the user asks to review the spec, or when the spec has been recently written and needs to be reviewed before moving to the next phase of writing tasks and implementation.
 disable-model-invocation: true
 context: fork
 allowed-tools: Agent(Explore), Bash, Read, Grep, Write, Edit, Glob, AskUserQuestion, TodoWrite
