@@ -9,7 +9,7 @@
       "name": "specwright",
       "source": {
         "source": "local",
-        "path": "./"
+        "path": "./plugins/specwright"
       },
       "policy": {
         "installation": "AVAILABLE",
