@@ -46,3 +46,4 @@ docs/discovery/
 .dolt/
 *.db
 .beads-credential-key
+.beads/*.jsonl
